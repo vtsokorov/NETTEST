@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Сервер тестирования</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="lb_server_status">
+        <property name="text">
+         <string>Список клиент-серверных сообщений:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="lw_client_list"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>653</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Сервер</string>
+    </property>
+    <addaction name="act_start"/>
+    <addaction name="act_stop"/>
+    <addaction name="act_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="act_about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="act_start">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/connect.png</normaloff>:/img/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Запустить сервер</string>
+   </property>
+  </action>
+  <action name="act_stop">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/disconnect.png</normaloff>:/img/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Остановить сервер</string>
+   </property>
+  </action>
+  <action name="act_exit">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/exit.png</normaloff>:/img/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="act_about">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/info.png</normaloff>:/img/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
